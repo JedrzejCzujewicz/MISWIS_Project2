@@ -6,18 +6,16 @@ Adafruit_BMP280 bmp;
 
 #define PWMpin 11
 
-//deklaracja zmiennych
 float temp_zadana=30;
 int time=0;
 float calka=0.0;
 float uchyb=0.0;
 float prev_uchyb=0.0;
 
-//deklaracja stalych
-float Kp=892.44; //<-Tutaj wstaw wartosci
-float Ki=61.97; //<-Tutaj wstaw wartosci
-float Kd=3212.78; //<-Tutaj wstaw wartosci
-float T=0.1; //czas probkowania //<-Tutaj wstaw wartosci
+float Kp=892.44;
+float Ki=61.97;
+float Kd=3212.78;
+float T=0.1;
 float czlon_p=0.0;
 float czlon_i=0.0;
 float czlon_d=0.0;
