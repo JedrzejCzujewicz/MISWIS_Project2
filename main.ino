@@ -52,8 +52,7 @@ void loop() {
   delay(100);
 }
 
-float PID(float zadana, float zmierzona) 
-{
+float PID(float zadana, float zmierzona) {
   float uchyb = zadana - zmierzona;
   float czlon_p = Kp * uchyb;
   float potencjalna_calka = calka + uchyb * T;
