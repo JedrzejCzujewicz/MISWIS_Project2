@@ -1,9 +1,8 @@
 import serial
 import time
 
-
-ser = serial.Serial('COM3', 9600, timeout=1)  # Zmień 'COM3' na odpowiedni port
-time.sleep(2)  # Czekanie na stabilne połączenie z Arduino
+ser = serial.Serial('COM3', 9600, timeout=1)
+time.sleep(2)
 
 with open("dane.txt", "a") as plik:
     while True:
